@@ -593,11 +593,13 @@ justify-content: space-around;
 }
 .panel{
   color: #ffff;
-  padding: 50px 50px 150px 70px;
+  padding: 50px 0 150px 70px;
   width: 100%;
+  height: 400px;
   display: flex;
   background-color: #111111;
   justify-content: space-around;
+  position: relative;
 }
 .panel div{
   display: flex;
@@ -608,5 +610,12 @@ justify-content: space-around;
   display: flex;
   flex-direction: column;
 }
+.panel #asd{
+  position: absolute;
+  right: 0;
+  top:250px;
+}
+
+
 
 /*end reviews */
