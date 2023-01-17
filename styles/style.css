@@ -8,6 +8,7 @@
 body {
   height: 2089.3px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* header */
@@ -164,6 +165,7 @@ color: #E41C26;
 
 /* main */
 main {
+  transition: .4s ease;
   background-image: url("/img/Rectangle\ 9.jpg");
   height: 833px;
   position: relative;
@@ -209,7 +211,7 @@ main div h1 span {
     left: 0;
     height: 100%;
     width: 0;
-    background-color: crimson;
+    background-color:#E41C26;
     animation: text_reveal_box 1s ease;
     animation-delay: 0.5s;
 }
@@ -365,27 +367,27 @@ height: 200PX;
 /* end con-under-img */
 
 /* start about us  */
-.about-us{
+#about-us{
   display: flex;
   width: 80%;
   margin: 0 auto;
-  overflow: visible;
+  transition: .4s ease;
 }
-.about-us .first-con-about{
+#about-us .first-con-about{
   width: 50%;
 }
-.about-us h5{
+#about-us h5{
   color: #5E5E5E;
   font-size: 22px;
   text-transform: capitalize;
 }
-.about-us h1{
+#about-us h1{
   font-size: 60px;
   text-transform: capitalize;
   position: relative;
   margin-bottom: 1rem;
 }
-.about-us h1::after{
+#about-us h1::after{
   content: "";
   display: block;
   background-color: #E41C26;
@@ -394,57 +396,60 @@ height: 200PX;
   position: absolute;
   bottom: 3px;
 }
-.about-us p{
+#about-us p{
   font-size: 22px;
   margin:0 0 5rem 0;
 }
-.about-us .first-con-about div{
+#about-us .first-con-about div{
   display: flex;
 }
-.about-us .first-con-about div svg{
+#about-us .first-con-about div svg{
   margin-right: 2.5rem;
 }
-.about-us .first-con-about div div h5{
+#about-us .first-con-about div div h5{
   color: #111111;
   text-transform: capitalize;
   font-weight: bold;
 }
-.about-us .first-con-about div div p{
+#about-us .first-con-about div div p{
   color: #5E5E5E;
   font-size: 19px;
 }
-.about-us .first-con-about div div{
+#about-us .first-con-about div div{
   display: flex;
   flex-direction: column;
 }
-.about-us .second-con{
+#about-us .second-con{
   position: relative;
   max-width: 1000px;
   margin-bottom: -5px;
   
 }
+#about-us .second-con img{
+  height: 100%;
+}
 
-.about-us .second-con :first-child{
+#about-us .second-con :first-child{
   width: 100%;
 }
 
 .about-us .backGrounf-img{
   position: absolute;
-  width: fit-content;
-  bottom: 50px;
+  
+  width: 160%;
+  bottom: 16%;
   z-index: -1;
   left:-100px;
   overflow: visible;
 }
+
+
 @media(max-width:1132px){
-  .about-us .second-con img{
+  #about-us .second-con img{
   display: none;
 }
-.about-us .second-con{
-  background-image: none;
-  width: 10%;
-}
-.about-us .first-con-about{
+
+#about-us .first-con-about{
   width: 100%;
 }
 }
