@@ -14,9 +14,10 @@ if(searchInput.value==""){
     setTimeout(() => {
         searchIcon.style.display = "block";
         searchInput.style.display = "none";
-    }, 15000);
+    }, 25000);
 }
- 
+
+
 };
 
 
