@@ -16,9 +16,25 @@ if(searchInput.value==""){
         searchInput.style.display = "none";
     }, 25000);
 }
-
-
 };
+
+
+
+// animations to my website
+ScrollReveal({
+   reset: true ,
+   distance:'60px',
+   duration:2500,
+   delay:400
+});
+
+
+
+// animation to 3 cards
+ScrollReveal().reveal(".con-under-img div", { delay: 500, origin: "bottom" ,interval:200});
+
+// animation to titles
+ScrollReveal().reveal(".first-con-about h1", { delay: 500 , origin:'left' });
 
 
 
