@@ -34,6 +34,13 @@ humburger.onclick=()=>{
     main.style.marginTop="unset"
     spans[1].style.width="30px"
     spans[2].style.width="20px"
+    list.style.animationName="asd"
+    list.style.animationDuration="2s"
+    list.style.animationDirection = "alternate";
+    list.style.animationTimingFunction="ease";
+    list.style.animationFillMode = "backwards";
+
+    
   }else{
     list.classList.remove("active");
     list.classList.add("inactive")
@@ -69,7 +76,6 @@ window.onresize=()=>{
 }
 
 
-
 // animations to my website
 ScrollReveal({
   reset: true,
@@ -77,6 +83,8 @@ ScrollReveal({
   duration: 2500,
   delay: 400,
 });
+
+
 
 // animation to 3 cards
 ScrollReveal().reveal(".con-under-img div", {

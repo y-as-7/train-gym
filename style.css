@@ -539,12 +539,11 @@ height: 200PX;
     }
 }
 @keyframes asd{
-    50% {
-        height: 400px;
-        
+    from{
+        width: 20%;
     }
-    100% {
-        height: 900px;
+    to{
+        width: 100%;
         
     }
 }
@@ -558,7 +557,7 @@ height: 200PX;
 
 @keyframes text_reveal_name {
     100% {
-        color: crimson;
+        color:#E41C26;
         font-weight: 500;
     }
 }
