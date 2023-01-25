@@ -321,7 +321,7 @@ main div span:nth-child(7) {
     height: 10px;
     position: absolute;
     bottom: -53px;
-    left: -35px;
+    left: -42px;
     background-color: #e41c26;
     display: block;
 }
@@ -329,7 +329,7 @@ main div span:nth-child(8){
     width: 10px;
     height: 45px;
     position: absolute;
-    bottom: -52px;
+    bottom: -53px;
     left: 149px;
     background-color: #e41c26;
     display: block;
