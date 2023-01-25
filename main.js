@@ -17,9 +17,13 @@ searchIcon.onclick = () => {
   }
 };
 
+
+
+
 //humborgar icon
 
 let humburger = document.getElementById("humburger");
+let spans = document.querySelectorAll("#humburger span");
 let list=document.getElementById("list")
 let main=document.querySelector("main")
 humburger.onclick=()=>{
@@ -28,13 +32,17 @@ humburger.onclick=()=>{
     list.classList.add("active")
     list.classList.remove("inactive");
     main.style.marginTop="unset"
+    spans[1].style.width="30px"
+    spans[2].style.width="20px"
   }else{
     list.classList.remove("active");
     list.classList.add("inactive")
     main.style.marginTop="50px"
+    spans.forEach((e)=>{
+      e.style.width="50px"
+    })
   }
 }
-
 let links=document.querySelectorAll("#list ul li a");
 console.log(links)
 
@@ -48,10 +56,17 @@ links.forEach((e)=>{
 
 
 // condation 
-if(window.innerWidth>=839){
-  main.style.marginTop="0"
+if (window.innerWidth >= 839) {
+  main.style.marginTop = "0";
 }
 
+window.onresize=()=>{
+  if (window.innerWidth >= 839) {
+    main.style.marginTop = "0";
+  }else{
+    main.style.marginTop = "50px";
+  }
+}
 
 
 
