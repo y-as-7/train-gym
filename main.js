@@ -40,14 +40,17 @@ console.log(links)
 
 links.forEach((e)=>{
   e.onclick=()=>{
-    main.style.marginTop="50px"
     list.classList.remove("active")
     list.classList.add("inactive");
+    main.style.marginTop="50px"
   }
 })
 
 
-
+// condation 
+if(window.innerWidth>=839){
+  main.style.marginTop="0"
+}
 
 
 

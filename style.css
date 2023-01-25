@@ -201,6 +201,7 @@ main {
   transition: .4s ease;
   background-image: url("Rectangle\ 9.jpg");
   height: 833px;
+  margin-top: unset;
   position: relative;
 }
 
