@@ -20,11 +20,27 @@ searchIcon.onclick = () => {
 //humborgar icon
 
 let humburger = document.getElementById("humburger");
-
+let list=document.getElementById("list")
 humburger.onclick=()=>{
-  
+  window.scrollTo(0, 0);
+  if(list.classList.contains("inactive")){
+    list.classList.add("active")
+    list.classList.remove("inactive");
+  }else{
+    list.classList.remove("active");
+    list.classList.add("inactive")
+  }
 }
 
+let links=document.querySelectorAll("#list ul li a");
+console.log(links)
+
+links.forEach((e)=>{
+  e.onclick=()=>{
+    list.classList.remove("active")
+    list.classList.add("inactive");
+  }
+})
 
 
 

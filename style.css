@@ -7,9 +7,11 @@
 }
 
 
-body{
-  overflow-x: hidden;
-}
+
+  body{
+    overflow-x: hidden;
+  }
+
 
 
 /* header */
@@ -186,11 +188,14 @@ header {
 color: #E41C26;
 }
 
-.list {
+
+/* end header */
+/* list */
+.list{
   display: none;
 }
-/* end header */
 
+/* end list */
 /* main */
 main {
   transition: .4s ease;
@@ -331,7 +336,7 @@ main div span:nth-child(8){
 }
 main div span:nth-child(9) {
     width: 10px;
-    height: 450px;
+    height: 448px;
     position: absolute;
     top: -55px;
     left: -42px;
@@ -564,13 +569,15 @@ body{
   display: flex;
   height: 90px;
   align-items: center;
-  position: sticky;
   top: 0;
   z-index: 100;
   justify-content:space-between;
   padding-left: 10px;
   overflow: hidden;
-  
+  position: fixed;
+  }
+  main{
+    margin-top: 50px;
   }
   header .logo{
     width: 40%;
@@ -607,8 +614,44 @@ body{
 }
 
 /* end nav2 */
-}
 /* end header */
+.list{
+  display: none;
+}
+.list ul {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  background-color:#222222;
+  flex-direction: column;
+  justify-content: center;
+  height: 800px;
+}
+.list ul li {
+  margin: 20px 0;
+}
+.list ul li a{
+  color: #ffffff;
+  font-size: 70px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.list ul li:first-child a::after{
+  display: block;
+  content: "";
+  width: 200px;
+  height: 2px;
+  position: absolute;
+}
+.active{
+  display: block;
+}
+.inactive{
+  display: none;
+}
+
+
+}
 
 
 
