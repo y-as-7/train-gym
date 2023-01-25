@@ -21,14 +21,17 @@ searchIcon.onclick = () => {
 
 let humburger = document.getElementById("humburger");
 let list=document.getElementById("list")
+let main=document.querySelector("main")
 humburger.onclick=()=>{
   window.scrollTo(0, 0);
   if(list.classList.contains("inactive")){
     list.classList.add("active")
     list.classList.remove("inactive");
+    main.style.marginTop="unset"
   }else{
     list.classList.remove("active");
     list.classList.add("inactive")
+    main.style.marginTop="50px"
   }
 }
 
@@ -37,6 +40,7 @@ console.log(links)
 
 links.forEach((e)=>{
   e.onclick=()=>{
+    main.style.marginTop="50px"
     list.classList.remove("active")
     list.classList.add("inactive");
   }
