@@ -17,6 +17,21 @@ searchIcon.onclick = () => {
   }
 };
 
+//humborgar icon
+
+let humburger = document.getElementById("humburger");
+
+humburger.onclick=()=>{
+  
+}
+
+
+
+
+
+
+
+
 // animations to my website
 ScrollReveal({
   reset: true,
@@ -34,3 +49,16 @@ ScrollReveal().reveal(".con-under-img div", {
 
 // animation to titles
 ScrollReveal().reveal(".first-con-about h1", { delay: 500, origin: "left" });
+
+//animation about us
+ScrollReveal().reveal(".about-us .first-con-about .card", {
+  delay: 200,
+  origin: "left",
+  interval: 200,
+});
+ScrollReveal().reveal(".about-us .first-con-about p", {
+  delay: 200,
+  origin: "right",
+  interval: 200,
+});
+

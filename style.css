@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -185,7 +186,9 @@ header {
 color: #E41C26;
 }
 
-
+.list {
+  display: none;
+}
 /* end header */
 
 /* main */
@@ -336,6 +339,22 @@ main div span:nth-child(9) {
     display: block;
 }
 
+@media (max-width:1112px) {
+main div span:nth-child(9){
+   position: absolute;
+    top: -55px;
+    left: -40px;
+    background-color: #e41c26;
+    display: block;
+    width: 10px;
+    height: 448px;
+    position: absolute;
+    top: -55px;
+    left: -42px;
+    background-color: #e41c26;
+    display: block;
+}
+}
 @media (max-width:542px) {
 main div span:nth-child(9){
    position: absolute;
@@ -543,6 +562,8 @@ height: 200PX;
   z-index: 100;
   justify-content:space-between;
   padding-left: 10px;
+  overflow: hidden;
+  
   }
   header .logo{
     width: 40%;
