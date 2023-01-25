@@ -5,12 +5,15 @@
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
-
+html{
+  overflow-x: hidden;
+}
 body {
   height: 2089.3px;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 
 /* header */
 header {
